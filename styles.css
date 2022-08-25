@@ -64,13 +64,13 @@ body {
   font-size: 25px;
   padding-top: 16px;
   font-weight: 400;
-  float: right; /*izq*/
+  float: right; /*der*/
 }
 
 #navbar ul {
   list-style: none;
   text-transform: uppercase;
-  float: left; /*der*/
+  float: left; /*izq*/
 }
 
 #navbar ul li {
@@ -85,4 +85,164 @@ body {
 
 #navbar ul li a:hover {
   background: var(--color-tertiary);
+}
+
+/*Home*/
+#home{
+  background-color: var(--outline);
+}
+
+.showcase-img {
+  float: right; /*der*/
+  width: 50%;
+}
+
+.showcase-img img {
+  width: 90%;
+}
+
+.showcase-text {
+  float: left; /*izq*/
+  width: 50%;
+  /*padding: 20px 20px 20px 40px;*/
+}
+
+.showcase-text h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 46px;
+}
+
+.showcase-text .title-one {
+  font-size: 29px;
+  font-weight: 400;
+}
+.showcase-text .title-two {
+  color: #841934;
+}
+
+/*Evento*/
+#event{
+  background-color: var(--color-tertiary);
+  padding: 100px 0;
+}
+
+.event-video {
+  float: left;
+  width: 45%;
+  /*padding-top: 340px;*/
+}
+
+.event-description {
+  float: right;
+  width: 55%;
+}
+
+.event-description .large {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+/*Nossotros*/
+#about{
+  background-color: var(--outline);
+}
+
+.about-img {
+  float: right; /*der*/
+  width: 50%;
+}
+
+.about-img img {
+  width: 90%;
+}
+
+.about-text {
+  float: left; /*izq*/
+  width: 50%;
+  /*padding: 20px 20px 20px 40px;*/
+}
+
+.about-text .title-two {
+  color: #841934;
+}
+.about-text .large {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+/*Registro*/
+
+#registration {
+  background-color: var(--color-tertiary);
+ /* padding: 120px 0;*/
+}
+
+.registration-text {
+  float: left; /*izq*/
+  width: 45%;
+  padding: 10px 10px 10px 20px;
+}
+
+.registration-form {
+  float: right;
+  width: 50%;
+}
+
+.registration-text .large {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+form .form-group {
+  /*margin-bottom: 1rem;*/
+}
+
+form .form-control {
+  /* display: block;   padding: 0.375rem 0.7rem; */
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+  border: none;
+
+}
+
+ /* Boton Form */
+ .btn {
+  display: inline-block;
+  font-size: mar15px;
+  padding: 14px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-light {
+  background: #841934;
+  border: 1px solid #841934;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-light:hover {
+  background: #fff;
+  border: 1px solid #841934;
+  color: #841934;
+}
+
+/*Clima*/
+.container-clima{
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+  background-color: var(--outline);
+}
+/*Footer*/
+footer{
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  text-align: center;
+  padding: 2%;
 }
