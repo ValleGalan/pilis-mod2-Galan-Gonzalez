@@ -1,41 +1,80 @@
-    /**PALETA DE COLORES GLOBAL
+/**PALETA DE COLORES GLOBAL
     https://colorhunt.co/palette/eeebddd8b6a4630000000000  esta me gusta mas 
 
     https://colorhunt.co/palette/4f0e0ebb8760ffdadafff1f1
 
     https://colorhunt.co/palette/7d063331112cf2a07bfbdcc4
     */
-    :root {
-        --primary: #000000;
-        --on-primary: #EEEBDD;
+:root {
+  --primary: #000000;
+  --on-primary: #eeebdd;
 
-        --secondary: #630000;
-        --on-secondary: #EEEBDD;
+  --secondary: #630000;
+  --on-secondary: #eeebdd;
 
-        --color-tertiary: #D8B6A4;
+  --color-tertiary: #d8b6a4;
 
-        --outline: #79747E;
-        --surface: #fafcfd;
-        --on-surface: #191c1d;
-        --on-surface-variant: #49454f;
+  --outline: #79747e;
+  --surface: #fafcfd;
+  --on-surface: #191c1d;
+  --on-surface-variant: #49454f;
 
-        --primary-container: #BB8760;
-        --on-primary-container: #4F0E0E;
-        --secondary-container: #FFF1F1;
+  --primary-container: #bb8760;
+  --on-primary-container: #4f0e0e;
+  --secondary-container: #fff1f1;
 
-        --error-container: #F9DEDC;
-        --on-error-container: #410E0B;
-        --color-error: #990000;
-        --color-error-variant: #B3261E;
-        --on-error: #ffffff;
-        
-    }
+  --error-container: #f9dedc;
+  --on-error-container: #410e0b;
+  --color-error: #990000;
+  --color-error-variant: #b3261e;
+  --on-error: #ffffff;
+}
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-    html,
-    body {
-        height: 100%;
-        background-color: var(--background) !important;
-        margin: 0;
-    }
+html,
+body {
+  height: 100%;
+  background-color: var(--background) !important;
+  margin: 0;
 
-    
+  font-family: 'Source Sans Pro', sans-serif; /*google fonts*/
+}
+.container {
+  margin: auto;
+  /*max-width: 1300px;*/
+  overflow: auto;
+  padding: 0 10px;
+}
+/* Navbar */
+#navbar{
+  background-color: var( --secondary);
+}
+#navbar a {
+  color: var(--on-secondary);
+}
+#navbar .logo {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-top: 16px;
+  font-weight: 400;
+  float: left;
+}
+#navbar ul {
+  list-style: none;
+  text-transform: uppercase;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  background: var(--color-tertiary);
+}
