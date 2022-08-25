@@ -40,35 +40,43 @@ body {
 
   font-family: 'Source Sans Pro', sans-serif; /*google fonts*/
 }
+
+/*Contenedores*/
+
 .container {
   margin: auto;
   /*max-width: 1300px;*/
   overflow: auto;
   padding: 0 10px;
 }
+
 /* Navbar */
 #navbar{
   background-color: var( --secondary);
 }
+
 #navbar a {
   color: var(--on-secondary);
 }
+
 #navbar .logo {
   text-transform: uppercase;
   font-size: 25px;
   padding-top: 16px;
   font-weight: 400;
-  float: left;
+  float: right; /*izq*/
 }
+
 #navbar ul {
   list-style: none;
   text-transform: uppercase;
-  float: right;
+  float: left; /*der*/
 }
 
 #navbar ul li {
   float: left;
 }
+
 #navbar ul li a {
   display: block;
   padding: 20px;
