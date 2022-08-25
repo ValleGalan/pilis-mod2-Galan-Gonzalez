@@ -7,21 +7,115 @@
 
     <title>Expo Vinícola</title>
     <link rel="icon" href="./assets/images/Feria_Vinícola_Jujuy_2022.png">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--Menu-->
+    <header id="mainheader">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="#home">Expo <span class="secondary">Vinícola</span> </a></h1>
+                <ul>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#event">El evento</a></li>
+                    <li><a href="#registration">Registrate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Home -->
+    <section id="home">
+        <div class="container">
+            <div class="showcase-text">
+                <h1><span class="title-one">Expo Vinícola</span><br></h1>
+                <h2><span class="title-two">"Juntos potenciamos el comercio jujeño"</span></h2>
+            </div>
+            <div class="showcase-img">
+                <img src="https://i.ibb.co/Yc13gjV/showcase.png" alt="showcase" />
+            </div>
+
+        </div>
+    </section>
 
     <!--Sobre el evento -->
+    <section id="event">
+        <div class="container">
+            <div class="event-video">
+                <h2>Evento</h2>
+                <video> VIDEO</video>
+            </div>
+            <div class="event-description">
+                <h2><span class="title-two">"Subtitulo"</span></h2>
+                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
+                    tincidunt sed turpis et dictumst justo. Tempor venenatis magnis consequat, accumsan. Aliquet elit
+                    velit fringilla nulla nam. Dui purus quisque a dictumst odio molestie. Vitae nullam quis odio
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!--Nosotros -->
+    <section id="about">
+        <div class="container">
+            <div class="about-text">
+                <h2><span class="title-two">"Subtitulo"</span></h2>
+                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
+                    tincidunt sed turpis et dictumst justo. Tempor venenatis magnis consequat, accumsan. Aliquet elit
+                    velit fringilla nulla nam. Dui purus quisque a dictumst odio molestie. Vitae nullam quis odio
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://i.ibb.co/Yc13gjV/showcase.png" alt="showcase" />
+            </div>
+
+        </div>
+    </section>
 
     <!--Registro-->
-
+    <section id="registration">
+        <div class="container">
+            <div class="registration-text">
+                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
+                    tincidunt sed turpis et odio molestie. Vitae nullam quis odio
+                </p>
+            </div>
+            <div class="registration-form">
+                <h2><span class=" ">Formulario de contacto</span></h2>
+                <form id="formulario"> 
+                    <div class="form-group">
+                      <label for="name">Comercio</label>
+                      <input id="name" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="titular">Titular</label>
+                      <input id="titular" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="celular">Celular</label>
+                      <textarea class="form-control" id="celular" cols="30" rows="10"></textarea>
+                    </div>
+                    <!-- CONTROLAR -->
+                    <button id="enviar" class="btn btn-light">Enviar</button>
+            </div>
+        </div>
+    </section>
 
     <!--Sección con pronóstico del tiempo-  coordenadas geográficas ciudad cultural-->
-    
+    <section id="clima">
+        <div class="container-clima">
+                <h2><span class="title-two">Asi esta el clima en el lugar del evento</span></h2>
+                <p class="large">API CLIMAAA
+                </p>
+        </div>
+    </section>
     
     <!--Footer  con Contacto-->
-    
+    <footer>
+        <div> PONERL LINK A WASSAP XD
+            <link rel="stylesheet" href="">
+        </div>
+    </footer>
 
     <script src="main.js"></script> 
 
