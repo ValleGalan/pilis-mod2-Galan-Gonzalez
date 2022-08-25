@@ -1,33 +1,29 @@
 /**PALETA DE COLORES GLOBAL
     https://colorhunt.co/palette/eeebddd8b6a4630000000000  esta me gusta mas 
 
-    https://colorhunt.co/palette/4f0e0ebb8760ffdadafff1f1
-
-    https://colorhunt.co/palette/7d063331112cf2a07bfbdcc4
+ https://colorhunt.co/palette/533e85488fb14fd3c4c1f8cf /*este --/
     */
 :root {
-  --primary: #000000;
+  --primary: #630000;
   --on-primary: #eeebdd;
 
-  --secondary: #630000;
-  --on-secondary: #eeebdd;
+  --secondary: #F0E9D2;
+  --on-secondary: #000000;
 
-  --color-tertiary: #d8b6a4;
+  --color-tertiary: #F3F1F5;
 
   --outline: #79747e;
   --surface: #fafcfd;
   --on-surface: #191c1d;
   --on-surface-variant: #49454f;
 
-  --primary-container: #bb8760;
-  --on-primary-container: #4f0e0e;
-  --secondary-container: #fff1f1;
-
   --error-container: #f9dedc;
-  --on-error-container: #410e0b;
   --color-error: #990000;
-  --color-error-variant: #b3261e;
   --on-error: #ffffff;
+
+  --titulo: 35px;
+  --subtitulo: 27px;
+  --texto: 20px;
 }
 /* Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
@@ -35,9 +31,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--background) !important;
   margin: 0;
-
   font-family: 'Source Sans Pro', sans-serif; /*google fonts*/
 }
 
@@ -45,24 +39,23 @@ body {
 
 .container {
   margin: auto;
-  /*max-width: 1300px;*/
   overflow: auto;
   padding: 0 10px;
 }
 
 /* Navbar */
 #navbar{
-  background-color: var( --secondary);
+  background-color: var( --primary);
 }
 
 #navbar a {
-  color: var(--on-secondary);
+  color: var(--on-primary);
 }
 
 #navbar .logo {
   text-transform: uppercase;
   font-size: 25px;
-  padding-top: 16px;
+  padding-top: 10px;
   font-weight: 400;
   float: right; /*der*/
 }
@@ -70,11 +63,10 @@ body {
 #navbar ul {
   list-style: none;
   text-transform: uppercase;
-  float: left; /*izq*/
 }
 
 #navbar ul li {
-  float: left;
+  float: left;/*izq*/
 }
 
 #navbar ul li a {
@@ -84,12 +76,14 @@ body {
 }
 
 #navbar ul li a:hover {
-  background: var(--color-tertiary);
+  background: var(--secondary);
+
 }
 
 /*Home*/
 #home{
-  background-color: var(--outline);
+  background-color: var(--color-tertiary);
+  padding: 3%;
 }
 
 .showcase-img {
@@ -98,13 +92,15 @@ body {
 }
 
 .showcase-img img {
-  width: 90%;
+  width:300px;
+  height:300px;
+  border-radius:150px;
+  float: right; /*der*/
 }
 
 .showcase-text {
   float: left; /*izq*/
   width: 50%;
-  /*padding: 20px 20px 20px 40px;*/
 }
 
 .showcase-text h1 {
@@ -114,38 +110,42 @@ body {
 }
 
 .showcase-text .title-one {
-  font-size: 29px;
+  font-size: var(--titulo);
   font-weight: 400;
 }
 .showcase-text .title-two {
-  color: #841934;
+  color:var(--primary);
+  font-size: var(--subtitulo);
 }
 
 /*Evento*/
+
 #event{
-  background-color: var(--color-tertiary);
-  padding: 100px 0;
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  padding: 50px ;
 }
 
 .event-video {
   float: left;
-  width: 45%;
-  /*padding-top: 340px;*/
+  width: 50%;
 }
 
 .event-description {
   float: right;
-  width: 55%;
+  width: 50%;
+  justify-content: center;
 }
 
 .event-description .large {
-  padding-bottom: 10px;
-  font-size: 1.25rem;
+  font-size: var(--texto);
 }
 
 /*Nossotros*/
+
 #about{
-  background-color: var(--outline);
+  background-color: var(--color-tertiary);
+  padding: 3%;
 }
 
 .about-img {
@@ -157,31 +157,36 @@ body {
   width: 90%;
 }
 
+.about-img img {
+  width:300px;
+  height:300px;
+  border-radius:150px;
+  float: right; /*der*/
+}
+
 .about-text {
   float: left; /*izq*/
   width: 50%;
-  /*padding: 20px 20px 20px 40px;*/
 }
 
 .about-text .title-two {
-  color: #841934;
+  color:var(--primary);
 }
 .about-text .large {
   padding-bottom: 10px;
-  font-size: 1.25rem;
+  font-size: var(--texto);
 }
 
 /*Registro*/
 
 #registration {
-  background-color: var(--color-tertiary);
- /* padding: 120px 0;*/
+ background-color: var(--secondary);
+ color: var(--on-secondary);
 }
 
 .registration-text {
   float: left; /*izq*/
-  width: 45%;
-  padding: 10px 10px 10px 20px;
+  width: 50%;
 }
 
 .registration-form {
@@ -190,8 +195,7 @@ body {
 }
 
 .registration-text .large {
-  padding-bottom: 10px;
-  font-size: 1.25rem;
+  font-size: var(--texto);
 }
 
 form .form-group {
@@ -233,16 +237,15 @@ form .form-control {
 }
 
 /*Clima*/
-.container-clima{
-  margin: auto;
-  overflow: auto;
-  padding: 0 10px;
-  background-color: var(--outline);
+#clima{
+  background-color: var(--color-tertiary);
 }
+
+
 /*Footer*/
 footer{
-  background-color: var(--secondary);
-  color: var(--on-secondary);
+  background-color: var(--primary);
+  color: var(--on-primary);
   text-align: center;
   padding: 2%;
 }
