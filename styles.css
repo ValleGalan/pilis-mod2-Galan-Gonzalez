@@ -1,1 +1,41 @@
-/*Variables para los colores*/
+    /**PALETA DE COLORES GLOBAL
+    https://colorhunt.co/palette/eeebddd8b6a4630000000000  esta me gusta mas 
+
+    https://colorhunt.co/palette/4f0e0ebb8760ffdadafff1f1
+
+    https://colorhunt.co/palette/7d063331112cf2a07bfbdcc4
+    */
+    :root {
+        --primary: #000000;
+        --on-primary: #EEEBDD;
+
+        --secondary: #630000;
+        --on-secondary: #EEEBDD;
+
+        --color-tertiary: #D8B6A4;
+
+        --outline: #79747E;
+        --surface: #fafcfd;
+        --on-surface: #191c1d;
+        --on-surface-variant: #49454f;
+
+        --primary-container: #BB8760;
+        --on-primary-container: #4F0E0E;
+        --secondary-container: #FFF1F1;
+
+        --error-container: #F9DEDC;
+        --on-error-container: #410E0B;
+        --color-error: #990000;
+        --color-error-variant: #B3261E;
+        --on-error: #ffffff;
+        
+    }
+
+    html,
+    body {
+        height: 100%;
+        background-color: var(--background) !important;
+        margin: 0;
+    }
+
+    
