@@ -240,12 +240,36 @@ form .form-control {
 /*Clima*/
 #clima{
   background-color: var(--color-tertiary);
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
 }
 .container-clima ul{
   list-style: none;
   font-size: var(--texto);
-}
 
+}
+.container-clima .datosClima{
+  float: left;
+  width: 50%;
+}
+.container-clima .imagen-temperatura{
+float: right;
+width: 50%;
+width:300px;
+height:300px;
+border-radius:150px;
+}
+.container-clima .title-two{
+  color:var(--primary);
+  font-size: var(--subtitulo);
+  text-align: center;
+}
+#tipoClima{
+  text-align: center;
+  font-size: var(--subtitulo);
+  color: var(--primary);
+}
 /*Footer*/
 
 #footer{

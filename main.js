@@ -90,18 +90,29 @@ if(navigator.geolocation) {
             console.log(data) 
 
             let temp=data.main.temp- 273.15 ; // temperatura en kelvin a celsius
-            
+            temp=Math.round(temp);
             let date = new Date();
             fechaActual = date.toLocaleDateString()+" "+date.getHours()+":"+date.getMinutes();
             
-           // document.getElementById('fechaActual').src=img;
            document.getElementById('fechaActual').textContent=" Fecha : "+ fechaActual;
            document.getElementById('localidad').textContent= "Localidad: " +data.name;
-           document.getElementById('humedad').textContent=" Humedad: "+data.main.humidity;
-           document.getElementById('temperatura').textContent="Temperatura: "+Math. round(temp)+ "°C";
+           document.getElementById('humedad').textContent=" Humedad: "+data.main.humidity + " %";
+           document.getElementById('temperatura').textContent="Temperatura: "+temp+ "°C";
            document.getElementById('visibilidad').textContent="Visibilidad: "+data.visibility;
            document.getElementById('porcNubes').textContent="Pocentaje de Nubes: "+data.clouds.all;
           
+           //imagen dependiendo la temperatura
+           if (temp>=10 && temp <20){
+            document.getElementById('imgTemp').src="./assets/images/nublado.png";
+            document.getElementById('tipoClima').textContent="clima es el templado";
+           }else if(temp<10){
+            document.getElementById('imgTemp').src="./assets/images/frio.png";
+            document.getElementById('tipoClima').textContent="clima es el frío";
+           }else if(temp>=20){
+            document.getElementById('imgTemp').src="./assets/images/soleado.png";
+            document.getElementById('tipoClima').textContent="clima cálido";
+           }
+
         }
         getData()
     })
