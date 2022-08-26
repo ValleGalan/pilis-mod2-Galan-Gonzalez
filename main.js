@@ -24,7 +24,20 @@ function onClick (event) {
           cleanForm();
       })
       .catch((err) => console.log(err));
-  
+    
+    console.log('antes de la promesa...');
+    let promise = new Promise(function(resolve, reject){
+        setTimeout(() => resolve(), 5000);
+        const getValueInput = () => {
+            let inputValue1 = document.querySelector("#comercio").value;
+            let inputValue2 = document.querySelector("#titular").value; 
+            let inputValue3 = document.querySelector("#celular").value;               
+        };
+    })
+    .then(resp => {
+        console.log('termino el timeout');
+    });
+    console.log('despues de la promesa');
   }
 
   function cleanForm() {
@@ -43,9 +56,11 @@ const getValueInput = () => {
     let inputValue1 = document.querySelector("#comercio").value;
     let inputValue2 = document.querySelector("#titular").value; 
     let inputValue3 = document.querySelector("#celular").value;       
-
     console.log(inputValue1);
     console.log(inputValue2);
     console.log(inputValue3);
-};
+};  
+
+
+
 
