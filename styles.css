@@ -134,7 +134,7 @@ body {
 
 .event-description {
   float: right;
-  width: 50%;
+  width: 40%;
   justify-content: center;
 }
 
@@ -187,7 +187,8 @@ body {
 
 .registration-text {
   float: left; /*izq*/
-  width: 50%;
+  width: 45%;
+  
 }
 
 .registration-form {

@@ -21,8 +21,8 @@
             <div class="container">
                 <h1 class="logo"><a href="#home">Expo <span class="secondary">Vinícola</span> </a></h1>
                 <ul>
-                    <li><a href="#about">Nosotros</a></li>
                     <li><a href="#event">El evento</a></li>
+                    <li><a href="#about">Nosotros</a></li>
                     <li><a href="#registration">Registrate</a></li>
                 </ul>
             </div>
@@ -47,14 +47,16 @@
     <section id="event">
         <div class="container">
             <div class="event-video">
-                <h2>Evento</h2>
-                <video> VIDEO</video>
+                <video loop="true" autoplay="autoplay" controls="controls" width="640" height="360" id="vid" muted>
+                     <source src="./assets/videos/Expo_Vinícola_Vid.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="event-description">
-                <h2><span class="title-two">"Subtitulo"</span></h2>
-                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
-                    tincidunt sed turpis et dictumst justo. Tempor venenatis magnis consequat, accumsan. Aliquet elit
-                    velit fringilla nulla nam. Dui purus quisque a dictumst odio molestie. Vitae nullam quis odio
+                <h2><span class="title-two">EL EVENTO</span></h2>
+                <p class="large">La feria más importante de vinos del NOA, organizada por el Gobierno de la Provincia de Jujuy, 
+                    acaba de anunciar el regreso. La misma se realizará de forma presencial el sabado 27 de Agosto 
+                    de 14 a 21hs, en la Ciudad Cultural. Será el espacio en el que los productores y bodegas de todos los tamaños 
+                    podrán encontrarse cara a cara con distribuidores y representantes que vienen a buscar nuevas marcas para comercializar, así como con compradores.
                 </p>
             </div>
         </div>
@@ -64,10 +66,11 @@
     <section id="about">
         <div class="container">
             <div class="about-text">
-                <h2><span class="title-two">"Subtitulo"</span></h2>
-                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
-                    tincidunt sed turpis et dictumst justo. Tempor venenatis magnis consequat, accumsan. Aliquet elit
-                    velit fringilla nulla nam. Dui purus quisque a dictumst odio molestie. Vitae nullam quis odio
+                <h2><span class="title-two">NOSOTROS</span></h2>
+                <p class="large">Luego de realizarse en Mendoza durante el 2021. Este 2022 regresa la expo Vinícola
+                    a Jujuy. La nueva sede da cuenta de su fuerte crecimiento y del apoyo que el Gobierno provincial
+                    ha decidido otorgarle. Agradecemos especialmente también a la UNJu y a la empresa INCLUIT
+                    por brindarle sus sponsor y propagación.
                 </p>
             </div>
             <div class="about-img">
@@ -81,12 +84,14 @@
     <section id="registration">
         <div class="container">
             <div class="registration-text">
-                <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus sed facilisi ultrices
-                    tincidunt sed turpis et odio molestie. Vitae nullam quis odio
+                <br>
+                <p class="large">Tenemos ya más de 60 expositores confirmados y una cantidad estimada de 
+                    compradores de 4000 personas. ¿Que esperas para sumarte?
+                    Completa el siguiente registro para ello.
                 </p>
             </div>
             <div class="registration-form">
-                <h2><span class=" ">Formulario de contacto</span></h2>
+                <h2><span class=" ">Formulario de registro</span></h2>
                 <form id="formulario"> 
                     <div class="form-group">
                       <label for="comercio">Comercio</label>
@@ -108,36 +113,17 @@
 
     <!--Sección con pronóstico del tiempo-  coordenadas geográficas ciudad cultural-->
     <section id="clima">
-        <div class="container-clima">
-            <h2><span class="title-two">Asi esta el clima en el lugar del evento</span></h2>
-            <div class="datosClima">
-                <ul>
-                    <li id="fechaActual"></li>
-                    <li id="localidad"></li>
-                    <li id="humedad"></li>
-                    <li id="temperatura"></li>
-                    <li id="visibilidad"></li>
-                    <li id="porcNubes"></li>
-                </ul> 
-            </div> 
-            <div class="imagen-temperatura">
-                <img src="" alt="" id="imgTemp">
-                <p id="tipoClima"></p>
-            </div>  
+        <div class="container">
+                <h2><span class="title-two">Asi esta el clima en el lugar del evento</span></h2>
+                <p class="large">API CLIMAAA
+                </p>
         </div>
     </section>
     
     <!--Footer  con Contacto-->
-    <footer id="footer">
-        <div class="container-footer">
-            <div class="container-whatsapp">
-                <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="50" height="50" alt="Whatsapp" onclick="window.location.href='https://wa.me/3884040944?text=Hola!%20Soy%20Florencia%20Galán'">
-                <span class="nombre">Florencia Galán</span>
-            </div>
-            <div class="container-whatsapp">
-                <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="50" height="50" alt="Whatsapp" onclick="window.location.href='https://wa.me/3885128002?text=Hola!%20Soy%20Jose%20Gonzalez'">
-                <span class="nombre">José Gonzalez</span>
-            </div>
+    <footer>
+        <div> PONERL LINK A WASSAP XD
+            <link rel="stylesheet" href="">
         </div>
     </footer>
 

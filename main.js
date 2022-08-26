@@ -1,3 +1,7 @@
+//autoplay video
+document.getElementById('vid').play();
+
+
 // FORMULARIO
 function onClick (event) {
     event.preventDefault();
@@ -117,7 +121,6 @@ if(navigator.geolocation) {
         getData()
     })
 }  
-
 
  
 
