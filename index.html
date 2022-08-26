@@ -112,20 +112,39 @@
     </section>
 
     <!--Sección con pronóstico del tiempo-  coordenadas geográficas ciudad cultural-->
-    <section id="clima">
-        <div class="container">
+        <section id="clima">
+            <div class="container-clima">
                 <h2><span class="title-two">Asi esta el clima en el lugar del evento</span></h2>
-                <p class="large">API CLIMAAA
-                </p>
-        </div>
-    </section>
-    
-    <!--Footer  con Contacto-->
-    <footer>
-        <div> PONERL LINK A WASSAP XD
-            <link rel="stylesheet" href="">
-        </div>
-    </footer>
+                <div class="datosClima">
+                    <ul>
+                        <li id="fechaActual"></li>
+                        <li id="localidad"></li>
+                        <li id="humedad"></li>
+                        <li id="temperatura"></li>
+                        <li id="visibilidad"></li>
+                        <li id="porcNubes"></li>
+                    </ul> 
+                </div> 
+                <div class="imagen-temperatura">
+                    <img src="" alt="" id="imgTemp">
+                    <p id="tipoClima"></p>
+                </div>  
+            </div>
+        </section>
+        
+        <!--Footer  con Contacto-->
+        <footer id="footer">
+            <div class="container-footer">
+                <div class="container-whatsapp">
+                    <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="50" height="50" alt="Whatsapp" onclick="window.location.href='https://wa.me/3884040944?text=Hola!%20Soy%20Florencia%20Galán'">
+                    <span class="nombre">Florencia Galán</span>
+                </div>
+                <div class="container-whatsapp">
+                    <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="50" height="50" alt="Whatsapp" onclick="window.location.href='https://wa.me/3885128002?text=Hola!%20Soy%20Jose%20Gonzalez'">
+                    <span class="nombre">José Gonzalez</span>
+                </div>
+            </div>
+        </footer>
 
     <script src="main.js"></script> 
 
