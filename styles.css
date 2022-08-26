@@ -241,7 +241,10 @@ form .form-control {
 #clima{
   background-color: var(--color-tertiary);
 }
-
+.container-clima ul{
+  list-style: none;
+  font-size: var(--texto);
+}
 
 /*Footer*/
 
