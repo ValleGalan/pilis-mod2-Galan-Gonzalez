@@ -244,9 +244,22 @@ form .form-control {
 
 
 /*Footer*/
-footer{
+
+#footer{
   background-color: var(--primary);
   color: var(--on-primary);
   text-align: center;
   padding: 2%;
+}
+#footer .container-footer{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+}
+#footer .container-footer .container-whatsapp{
+  display: flex;
+  flex-direction: column;
+}
+#footer .container-footer .container-whatsapp .nombre{
+  padding-top: 10px;
 }
