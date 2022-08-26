@@ -198,9 +198,9 @@ body {
   font-size: var(--texto);
 }
 
-form .form-group {
-  /*margin-bottom: 1rem;*/
-}
+/*form .form-group {
+  margin-bottom: 1rem;
+}*/
 
 form .form-control {
   /* display: block;   padding: 0.375rem 0.7rem; */

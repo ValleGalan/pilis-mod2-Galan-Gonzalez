@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Expo Vinícola</title>
-    <link rel="icon" href="./assets/images/Feria_Vinícola_Jujuy_2022.png">
+    <link rel="icon" href=".\assets\images\Feria_Vinícola_Jujuy_2022-removebg-preview.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="main.js">
 </head>
 <body>
     <!--Menu-->
@@ -84,8 +86,8 @@
                 <h2><span class=" ">Formulario de contacto</span></h2>
                 <form id="formulario"> 
                     <div class="form-group">
-                      <label for="name">Comercio</label>
-                      <input id="name" class="form-control" type="text">
+                      <label for="comercio">Comercio</label>
+                      <input id="comercio" class="form-control" type="text">
                     </div>
                     <div class="form-group">
                       <label for="titular">Titular</label>
@@ -93,10 +95,10 @@
                     </div>
                     <div class="form-group">
                       <label for="celular">Celular</label>
-                      <textarea class="form-control" id="celular" cols="30" rows="10"></textarea>
+                      <input class="form-control" id="celular" cols="30" rows="10"></input>
                     </div>
                     <!-- CONTROLAR -->
-                    <button id="enviar" class="btn btn-light">Enviar</button>
+                    <button id="enviar" class="btn btn-light" onclick="getValueInput()">Enviar</button>
             </div>
         </div>
     </section>
