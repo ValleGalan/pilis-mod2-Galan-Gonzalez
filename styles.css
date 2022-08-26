@@ -1,8 +1,6 @@
-/**PALETA DE COLORES GLOBAL
-    https://colorhunt.co/palette/eeebddd8b6a4630000000000  esta me gusta mas 
-
- https://colorhunt.co/palette/533e85488fb14fd3c4c1f8cf /*este --/
-    */
+/*PALETA DE COLORES GLOBAL
+    https://colorhunt.co/palette/eeebddd8b6a4630000000000 
+*/
 :root {
   --primary: #630000;
   --on-primary: #eeebdd;
@@ -77,7 +75,10 @@ body {
 
 #navbar ul li a:hover {
   background: var(--secondary);
-
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  font-size: 18px;
+  border-radius: 6px;  
 }
 
 /*Home*/
