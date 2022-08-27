@@ -19,7 +19,7 @@
   --color-error: #990000;
   --on-error: #ffffff;
 
-  --titulo: 35px;
+  --titulo: 40px;
   --subtitulo: 27px;
   --texto: 20px;
 }
@@ -46,8 +46,9 @@ body {
 #navbar{
   background-color: var( --primary);
 }
-#navbar .texto-logo{
+.texto-logo{
   font-weight: bold;
+  padding-bottom: 3rem;
 }
 
 #navbar a {
@@ -61,6 +62,13 @@ body {
   font-weight: 400;
   float: right; /*der*/
 }
+
+.logo img{
+  height: 40px;
+  border-radius: 100%;  
+  border: 1px solid var(--secondary);
+}
+
 
 #navbar ul {
   list-style: none;
@@ -93,17 +101,19 @@ body {
 
 .home-img {
   float: right; /*der*/
-  width: 50%;
+  width: 40%;
 }
 
 .home-img img {
   border-radius:150px;
   float: right; /*der*/
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
+  /*transition: ease-in-out 0.2s;*/
 }
-.home-img  :hover {
+.home-img img:hover {
   filter: saturate(180%); /*efecto Saturación*/
+  /*transform: scale(1.05);*/
 }
 
 .home-text {
@@ -119,7 +129,7 @@ body {
 
 .home-text .title-one {
   font-size: var(--titulo);
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 .home-text .title-two {
@@ -167,10 +177,16 @@ body {
 }
 
 .about-img img {
-  width:300px;
-  height:300px;
-  border-radius:150px;
+ 
+  height:150px;
+  border-radius:15px;
   float: right; /*der*/
+  transition: ease-in-out 0.2s;
+  filter: drop-shadow(2px 2px 2px var(--primary));
+}
+
+.about-img img:hover{
+  transform: scale(1.03);
 }
 
 .about-text {
@@ -248,12 +264,14 @@ form .form-control input{
   border: 1px solid #841934;
   color: var(--on-secondary);
   width: 100%;
+  transition: ease-in-out 0.2s;
 }
 
 .btn-light:hover {
   background: var(--color-tertiary);
   border: 1px solid #841934;
   color: var(--primary);
+  transform: scale(1.03);
 }
 
 /*Clima*/
