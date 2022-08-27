@@ -30,6 +30,7 @@ function onClick (event) {
       .catch((err) => console.log(err));
     
     console.log('antes de la promesa...');
+    
     let promise = new Promise(function(resolve, reject){
         setTimeout(() => resolve(), 5000);
         const getValueInput = () => {
@@ -38,6 +39,7 @@ function onClick (event) {
             let inputValue3 = document.querySelector("#celular").value;               
         };
     })
+
     .then(resp => {
         console.log('termino el timeout');
     });
@@ -120,7 +122,39 @@ if(navigator.geolocation) {
     })
 }  
 
+//Promesa- ejemplo
  
+const datos= [
+    {
+    id:1,
+    comercio:"Vino Jujuy",
+    Titular: "Jose Gonzalez",
+    celular: 3885128002
+},
+{
+    id:2,
+    comercio:"Comercio vinero",
+    Titular: "Florencia Galán",
+    celular: 3884040944 
+}
+];
 
+const getDatos=() =>{
+    return new Promise( (resolve,reject)=>{
+        setTimeout( ()=>{
+            resolve(datos) ;
+        },1500 );
+    } );
+}
+//getDatos().then( (datos) => console.log(datos));// verlo
 
+async  function ObtenerDatos (){
+    try{
+        const datosPromise = await getDatos();
+        console.log(datosPromise);
+    }catch(err){
+        console.log(err);
+    }
+}
+ObtenerDatos ();
 
