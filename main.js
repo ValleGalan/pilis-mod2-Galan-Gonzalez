@@ -104,17 +104,15 @@ if(navigator.geolocation) {
            document.getElementById('temperatura').textContent="Temperatura: "+temp+ "°C";
            document.getElementById('visibilidad').textContent="Visibilidad: "+data.visibility;
            document.getElementById('porcNubes').textContent="Pocentaje de Nubes: "+data.clouds.all;
-          
+           document.getElementById('tipoClima').textContent=data.weather[0].description;
+
            //imagen dependiendo la temperatura
            if (temp>=10 && temp <20){
             document.getElementById('imgTemp').src="./assets/images/nublado.png";
-            document.getElementById('tipoClima').textContent="clima es el templado";
            }else if(temp<10){
             document.getElementById('imgTemp').src="./assets/images/frio.png";
-            document.getElementById('tipoClima').textContent="clima es el frío";
            }else if(temp>=20){
             document.getElementById('imgTemp').src="./assets/images/soleado.png";
-            document.getElementById('tipoClima').textContent="clima cálido";
            }
 
         }

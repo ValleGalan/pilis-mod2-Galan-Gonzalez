@@ -155,7 +155,9 @@ body {
   width: 40%;
   justify-content: center;
 }
-
+.event-description .title-two {
+  color:var(--primary);
+}
 .event-description .large {
   font-size: var(--texto);
 }
@@ -207,6 +209,7 @@ body {
 #registration {
  background-color: var(--secondary);
  color: var(--on-secondary);
+ padding: 2%;
 }
 
 .registration-text {
@@ -219,14 +222,15 @@ body {
 
 .registration-form {
   float: right;
-  width: 45%;
-  padding: 2%;
+  width: 40%;
+}
+.registration-form #formulario{
+  padding: 5%;
   margin: 1%;
   background-color: var(--primary);
   color: var(--color-tertiary);
   border-radius: 6px;
 }
-
 .registration-text .large {
   font-size: var(--texto);
 }
@@ -281,32 +285,46 @@ form .form-control input{
   overflow: auto;
   padding: 0 10px;
 }
+.container-clima{
+  padding-bottom: 5%;
+}
 .container-clima ul{
   list-style: none;
   font-size: var(--texto);
-
 }
 .container-clima .datosClima{
   float: left;
   width: 50%;
+  text-align: center;
+  border-radius: 6px;
+  font-size: var(--subtitulo);
 }
-.container-clima .imagen-temperatura{
+.container-clima .imagen-temperatura img{
 float: right;
 width: 50%;
-width:300px;
-height:300px;
+width:200px;
+height:200px;
 border-radius:150px;
 }
-.container-clima .title-two{
+.imagen-temperatura{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
+  flex-wrap :wrap;
+}
+.container-clima h2 .subtitle{
   color:var(--primary);
   font-size: var(--subtitulo);
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-#tipoClima{
-  text-align: center;
+ #tipoClima{
   font-size: var(--subtitulo);
   color: var(--primary);
+  padding-left: 35px;
 }
+
 /*Footer*/
 
 #footer{
