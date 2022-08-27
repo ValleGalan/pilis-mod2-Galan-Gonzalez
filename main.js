@@ -7,9 +7,9 @@ function onClick (event) {
     event.preventDefault();
     
     const mensaje = {
-      name: document.getElementById('comercio').value,
-      email: document.getElementById('titular').value,
-      message: document.getElementById('celular').value
+      comercio: document.getElementById('comercio').value,
+      titular: document.getElementById('titular').value,
+      celular: document.getElementById('celular').value
     }
   
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -19,7 +19,7 @@ function onClick (event) {
     })
       .then((response) => response.json())
       .then((json) => { 
-          console.log(json);
+          console.log(json); //muestra los datos 
           Swal.fire(
               'Enviado',
               'Usted se ha registrado', 
@@ -44,6 +44,7 @@ function onClick (event) {
         console.log('termino el timeout');
     });
     console.log('despues de la promesa');
+
   }
 
   function cleanForm() {
